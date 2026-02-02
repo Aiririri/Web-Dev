@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  <-- УБРАНО: чтобы элементы растягивались по высоте */
+    flex-grow: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Убран нижний padding, чтобы вертикальная линия касалась низа */
+    padding: 20px 20px 0 20px; 
+}
+.insta-glyph{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+
+
+
+}
+/* --- Left Section --- */
+.collage-section {
+    flex: 1;
+    /* Изменены отступы для центрирования контента по вертикали */
+    padding: 40px 40px 20px 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left; /* Центрируем блок текста и картинки по вертикали */
+}
+
+.collage-section h1 {
+    /* font-size: 32px; <-- СТАРОЕ ЗНАЧЕНИЕ */
+    font-size: 20px; /* <-- НОВОЕ: Шрифт меньше */
+    font-weight: 700;
+    line-height: 1.2;
+    /* margin: 20px 0; <-- СТАРОЕ ЗНАЧЕНИЕ */
+    margin: 0px 0 25px 0; /* <-- НОВОЕ: Ближе к верху, отступ снизу до картинки */
+    max-width: 400px;
+}
+
+.collage-section h1 span {
+    background: -webkit-linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collage-image {
+    margin-top: 0; /* Гарантируем, что картинка сразу под текстом */
+}
+
+/* --- SEPARATION LINES --- */
+
+.vertical-line {
+    width: 1px;
+    /* height: 600px; <-- УБРАНО фиксированную высоту */
+    background-color: #dbdbdb; 
+    margin: 0 50px;
+    /* Теперь линия растягивается на всю высоту контейнера .wrapper */
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: 0; /* Отступ 0 гарантирует касание с блоком выше */
+}
+
+/* ------------------------ */
+
+/* Right Section */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрируем форму по вертикали */
+    background-color: #ffffff;
+    padding-bottom: 20px; /* Небольшой отступ снизу внутри правой части */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.login-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background: #fafafa;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #a2bcf4;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.link-small {
+    display: block;
+    font-size: 12px;
+    color: #262626;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-outline {
+    width: 100%;
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.blue-text {
+    color: #0095f6;
+    border-color: #0095f6;
+}
+
+.meta-footer {
+    margin-top: 40px;
+    opacity: 0.6;
+}
+
+/* Bottom Footer */
+.bottom-links {
+    padding: 20px;
+    font-size: 12px;
+    color: #8e8e8e;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .collage-section, .vertical-line { 
+        display: none; 
+    }
+    .wrapper { 
+        padding: 20px; 
+    }
+}
