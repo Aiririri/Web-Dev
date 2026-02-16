@@ -1,10 +1,5 @@
 Online Store 
 
-
-npm install
-
-
-
 ng serve
 
 Open http://localhost:4200
@@ -15,3 +10,4 @@ CSS Grid
 Image gallery
 WhatsApp & Telegram share
 Strong TypeScript typing
+
