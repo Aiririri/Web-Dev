@@ -1,0 +1,21 @@
+<div class="photos-page">
+  <button class="btn-back" [routerLink]="['/albums', albumId]">← Back to Album</button>
+
+  <h1>Photos — Album #{{ albumId }}</h1>
+
+  <div class="loading" *ngIf="loading">
+    <div class="spinner"></div>
+    <p>Loading photos...</p>
+  </div>
+
+  <div class="empty" *ngIf="!loading && photos.length === 0">
+    <p>No photos found for this album.</p>
+  </div>
+
+  <div class="photo-grid" *ngIf="!loading && photos.length > 0">
+    <div class="photo-card" *ngFor="let photo of photos">
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title" loading="lazy" />
+      <p class="photo-title">{{ photo.title }}</p>
+    </div>
+  </div>
+</div>
