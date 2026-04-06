@@ -1,0 +1,205 @@
+{
+  "info": {
+    "_postman_id": "e5720bd9-6707-44c1-b6f5-66a96677b026",
+    "name": "djlab",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53733770",
+    "_collection_link": "https://go.postman.co/collection/53733770-e5720bd9-6707-44c1-b6f5-66a96677b026?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get All Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/",
+              "path": [
+                "api",
+                "categories",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/1/",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products by Category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/1/products/",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/",
+              "path": [
+                "api",
+                "categories",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/1/",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "/api/categories/1/",
+              "path": [
+                "api",
+                "categories",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "/api/products/",
+              "path": [
+                "api",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Products By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "/api/products/1/",
+              "path": [
+                "api",
+                "products",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "/api/products/",
+              "path": [
+                "api",
+                "products",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "/api/products/1/",
+              "path": [
+                "api",
+                "products",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "/api/products/1/",
+              "path": [
+                "api",
+                "products",
+                "1",
+                ""
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
